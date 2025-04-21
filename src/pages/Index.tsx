@@ -11,23 +11,23 @@ const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-brasil-blue to-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#FFF5E6] to-[#FFE0B2] text-[#333]">
       {/* Hero Section */}
       <div className="relative overflow-hidden py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left space-y-6">
-              <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#FF6B35]">
                 Discover the Sweet & Spicy
-                <span className="text-brasil-yellow block mt-2">
+                <span className="text-[#FF9F1C] block mt-2">
                   Flavors of Brazil
                 </span>
               </h1>
-              <p className="text-lg text-gray-300 max-w-xl">
+              <p className="text-lg text-[#444] max-w-xl">
                 Master 30+ authentic Brazilian recipes in your kitchen with our beautifully crafted eBook. From Feijoada to Brigadeiros, start your culinary journey today!
               </p>
               <Button 
-                className="bg-brasil-yellow hover:bg-brasil-yellow/90 text-brasil-blue text-lg px-8 py-6 rounded-full shadow-lg animate-pulse"
+                className="bg-[#00A859] hover:bg-[#00C16E] text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
               >
                 Get Your Copy Now! 🇧🇷
               </Button>
@@ -41,46 +41,46 @@ const Index = () => {
                   alt="Brazilian Cuisine eBook Mockup"
                   className="rounded-lg shadow-2xl mx-auto max-w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-brasil-green/20 to-brasil-yellow/20 rounded-lg" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B35]/20 to-[#FFD166]/20 rounded-lg" />
               </div>
-              <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-brasil-yellow rounded-full blur-2xl opacity-20" />
+              <div className="absolute -right-4 -bottom-4 w-32 h-32 bg-[#FF9F1C] rounded-full blur-2xl opacity-20" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gradient-to-r from-brasil-blue/90 to-brasil-forest/90 py-16">
+      <div className="bg-gradient-to-r from-[#FFA07A] to-[#FF6347] py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-playfair text-center mb-12">
+          <h2 className="text-3xl font-playfair text-center mb-12 text-white">
             Why Brazilian Cuisine is Taking Over UK Kitchens
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <h3 className="text-2xl font-bold text-brasil-yellow">30+</h3>
+              <h3 className="text-2xl font-bold text-[#FFD700]">30+</h3>
               <p className="text-gray-300">Authentic Recipes</p>
             </div>
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <h3 className="text-2xl font-bold text-brasil-yellow">15 min</h3>
+              <h3 className="text-2xl font-bold text-[#FFD700]">15 min</h3>
               <p className="text-gray-300">Average Prep Time</p>
             </div>
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <h3 className="text-2xl font-bold text-brasil-yellow">4.9/5</h3>
+              <h3 className="text-2xl font-bold text-[#FFD700]">4.9/5</h3>
               <p className="text-gray-300">Customer Rating</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Testimonials */}
-      <div className="py-16 bg-gradient-to-b from-brasil-blue/20 to-brasil-forest/20">
+      {/* Testimonials Section */}
+      <div className="py-16 bg-[#FFF5E6]">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-3xl text-center mb-12">
+          <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
             What Our Home Chefs Are Saying
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur p-6 rounded-lg border border-white/10">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-[#FFD166]/20">
                 <div className="flex items-center mb-4">
                   <img
                     src={testimonial.avatar}
@@ -88,11 +88,11 @@ const Index = () => {
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>
-                    <h4 className="font-bold text-brasil-yellow">{testimonial.name}</h4>
+                    <h4 className="font-bold text-[#FF9F1C]">{testimonial.name}</h4>
                     <p className="text-sm text-gray-400">{testimonial.location}</p>
                   </div>
                 </div>
-                <p className="text-gray-300">{testimonial.text}</p>
+                <p className="text-[#333]">{testimonial.text}</p>
               </div>
             ))}
           </div>
@@ -100,17 +100,17 @@ const Index = () => {
       </div>
 
       {/* Pricing Section */}
-      <div className="py-16 relative overflow-hidden">
+      <div className="py-16 relative overflow-hidden bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">
         <div className="container mx-auto px-4">
-          <div className="max-w-lg mx-auto text-center bg-gradient-to-r from-brasil-forest/30 to-brasil-blue/30 p-8 rounded-lg border border-white/10 backdrop-blur">
-            <h2 className="text-4xl font-playfair font-bold mb-4">
+          <div className="max-w-lg mx-auto text-center bg-white/90 p-8 rounded-lg shadow-xl">
+            <h2 className="text-4xl font-playfair font-bold mb-4 text-[#FF6B35]">
               Special Launch Offer
             </h2>
-            <div className="text-6xl font-bold mb-4">
-              <span className="text-brasil-yellow">£6.99</span>
+            <div className="text-6xl font-bold mb-4 text-[#00A859]">
+              £6.99
             </div>
-            <p className="text-brasil-sunset mb-6">Limited Time Only!</p>
-            <Button className="bg-brasil-yellow hover:bg-brasil-yellow/90 text-brasil-blue px-8 py-6 text-lg rounded-full shadow-lg">
+            <p className="text-[#FF6B35] mb-6">Limited Time Only!</p>
+            <Button className="bg-[#00A859] hover:bg-[#00C16E] text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
               Download Now 🇧🇷
             </Button>
           </div>
@@ -118,19 +118,19 @@ const Index = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="py-16 bg-gradient-to-b from-brasil-blue/10 to-black">
+      <div className="py-16 bg-[#FFF5E6]">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-3xl text-center mb-12 text-brasil-yellow">
+          <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
             Frequently Asked Questions
           </h2>
           <div className="max-w-2xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white/5 rounded-lg border border-white/10">
-                  <AccordionTrigger className="text-brasil-yellow px-4">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-md">
+                  <AccordionTrigger className="text-[#FF9F1C] px-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-300 px-4">
+                  <AccordionContent className="text-[#333] px-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -141,15 +141,15 @@ const Index = () => {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-gradient-to-r from-brasil-green to-brasil-blue py-16">
+      <div className="bg-gradient-to-r from-[#FF6B35] to-[#FFD166] py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl font-bold mb-6">
+          <h2 className="font-playfair text-4xl font-bold mb-6 text-white">
             Start Your Brazilian Culinary Journey Today!
           </h2>
-          <p className="text-lg mb-8 opacity-90">
+          <p className="text-lg mb-8 text-white opacity-90">
             Limited time offer - Master Brazilian cuisine from your kitchen!
           </p>
-          <Button className="bg-brasil-yellow hover:bg-brasil-yellow/90 text-brasil-blue px-8 py-6 text-lg rounded-full shadow-lg">
+          <Button className="bg-[#00A859] hover:bg-[#00C16E] text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             Get Your Copy Now 🇧🇷
           </Button>
         </div>
