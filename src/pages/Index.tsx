@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChefHat, Coffee, Leaf } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -38,9 +37,9 @@ const Index = () => {
                    onMouseEnter={() => setIsHovered(true)}
                    onMouseLeave={() => setIsHovered(false)}>
                 <img
-                  src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9"
-                  alt="Brazilian Food eBook"
-                  className="rounded-lg shadow-2xl mx-auto"
+                  src="/lovable-uploads/e5641db9-dedd-4a87-92d8-70792d93f44f.png"
+                  alt="Brazilian Cuisine eBook Mockup"
+                  className="rounded-lg shadow-2xl mx-auto max-w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-brasil-green/20 to-brasil-yellow/20 rounded-lg" />
               </div>
