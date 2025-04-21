@@ -120,9 +120,7 @@ const Index = () => {
           <p className="text-lg mb-8 text-white opacity-90">
             Limited time offer - Master Brazilian cuisine from your kitchen!
           </p>
-          <Button className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
-            Get Your Copy Now 🇧🇷
-          </Button>
+          <Button className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">Get your eBook now!</Button>
         </div>
       </div>
     </div>;
