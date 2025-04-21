@@ -37,7 +37,7 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <h3 className="text-2xl font-bold text-[#FFD700]">30+</h3>
+              <h3 className="text-2xl font-bold text-[#FFD700]">20+</h3>
               <p className="text-gray-300">Authentic Recipes</p>
             </div>
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
@@ -84,7 +84,7 @@ const Index = () => {
               £6.99
             </div>
             <p className="text-[#FF6B35] mb-6">Limited Time Only!</p>
-            <Button className="bg-[#00A859] hover:bg-[#00C16E] text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+            <Button className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
               Download Now 🇧🇷
             </Button>
           </div>
@@ -121,7 +121,7 @@ const Index = () => {
           <p className="text-lg mb-8 text-white opacity-90">
             Limited time offer - Master Brazilian cuisine from your kitchen!
           </p>
-          <Button className="bg-[#00A859] hover:bg-[#00C16E] text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+          <Button className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
             Get Your Copy Now 🇧🇷
           </Button>
         </div>
