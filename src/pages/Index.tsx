@@ -16,9 +16,7 @@ const Index = () => {
                 </span>
               </h1>
               <p className="text-lg text-[#444] max-w-xl">Transform your kitchen into a little piece of Brazil with the most traditional Brazilian cuisine recipes with our exclusive eBook. From feijoada to brigadeiros, embark now on a journey of unforgettable flavors!</p>
-              <Button className="bg-[#00A859] hover:bg-[#00C16E] text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                Get Your Copy Now! 🇧🇷
-              </Button>
+              <Button className="text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-lime-500 hover:bg-lime-400">Get your eBook now!</Button>
             </div>
             <div className="relative">
               <div className="relative transform hover:scale-105 transition-transform duration-500" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
