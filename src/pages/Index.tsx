@@ -1,8 +1,6 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
   return <div className="min-h-screen bg-gradient-to-b from-[#FFF5E6] to-[#FFE0B2] text-[#333]">
@@ -18,10 +16,7 @@ const Index = () => {
                 </span>
               </h1>
               <p className="text-lg text-[#444] max-w-xl">Transform your kitchen into a little piece of Brazil with the most traditional Brazilian cuisine recipes with our exclusive eBook. From feijoada to brigadeiros, embark now on a journey of unforgettable flavors!</p>
-              <Button 
-                onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')}
-                className="text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500"
-              >
+              <Button onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')} className="text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
                 Get your eBook now!
               </Button>
             </div>
@@ -47,10 +42,7 @@ const Index = () => {
               £6.99
             </div>
             <p className="text-[#FF6B35] mb-6">Limited Time Only!</p>
-            <Button 
-              onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')}
-              className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500"
-            >
+            <Button onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')} className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
               Download Now 🇧🇷
             </Button>
           </div>
@@ -58,22 +50,7 @@ const Index = () => {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-gradient-to-r from-[#FF6B35] to-[#FFD166] py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl font-bold mb-6 text-white">
-            Start Your Brazilian Culinary Journey Today!
-          </h2>
-          <p className="text-lg mb-8 text-white opacity-90">
-            Limited time offer - Master Brazilian cuisine from your kitchen!
-          </p>
-          <Button 
-            onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')}
-            className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500"
-          >
-            Get your eBook now!
-          </Button>
-        </div>
-      </div>
+      
 
       {/* Stats Section */}
       <div className="bg-gradient-to-r from-[#FFA07A] to-[#FF6347] py-16">
@@ -148,17 +125,13 @@ const Index = () => {
           <p className="text-lg mb-8 text-white opacity-90">
             Limited time offer - Master Brazilian cuisine from your kitchen!
           </p>
-          <Button 
-            onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')}
-            className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500"
-          >
+          <Button onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')} className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
             Get your eBook now!
           </Button>
         </div>
       </footer>
     </div>;
 };
-
 const testimonials = [{
   name: "Sarah Thompson",
   location: "London, UK",
@@ -175,7 +148,6 @@ const testimonials = [{
   text: "Beautiful photos, clear instructions, and authentic flavors. This eBook exceeded my expectations!",
   avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=64&h=64&fit=crop&crop=faces"
 }];
-
 const faqs = [{
   question: "Is this book digital or physical?",
   answer: "This is a digital eBook (PDF format) that you can read on any device - your computer, tablet, or smartphone."
@@ -189,5 +161,4 @@ const faqs = [{
   question: "How many recipes are included?",
   answer: "The eBook contains 30 traditional Brazilian recipes, including main dishes, sides, desserts, and drinks."
 }];
-
 export default Index;
