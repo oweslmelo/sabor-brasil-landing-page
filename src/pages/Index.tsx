@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -137,6 +138,24 @@ const Index = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer with Final CTA */}
+      <footer className="bg-gradient-to-r from-[#FF6B35] to-[#FFD166] py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-playfair text-4xl font-bold mb-6 text-white">
+            Start Your Brazilian Culinary Journey Today!
+          </h2>
+          <p className="text-lg mb-8 text-white opacity-90">
+            Limited time offer - Master Brazilian cuisine from your kitchen!
+          </p>
+          <Button 
+            onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')}
+            className="text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500"
+          >
+            Get your eBook now!
+          </Button>
+        </div>
+      </footer>
     </div>;
 };
 
