@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { Star, Check, Users } from "lucide-react";
-
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
   return <div className="min-h-screen bg-gradient-to-b from-[#FFF5E6] to-[#FFE0B2] text-[#333]">
@@ -128,13 +127,8 @@ const Index = () => {
           </h2>
           <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
             <Star className="w-16 h-16 text-[#FFD700] mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-4 text-[#FF6B35]">
-              7 Dias de Garantia Incondicional
-            </h3>
-            <p className="text-[#444] mb-6">
-              Se você não ficar completamente satisfeito com o eBook nos primeiros 7 dias, 
-              devolvemos seu dinheiro integralmente. Sem perguntas!
-            </p>
+            <h3 className="text-xl font-bold mb-4 text-[#FF6B35]">7 Day warranty</h3>
+            <p className="text-[#444] mb-6">If you are not satisfied we will give you your money back</p>
           </div>
         </div>
       </div>
@@ -197,7 +191,6 @@ const Index = () => {
       </footer>
     </div>;
 };
-
 const learningPoints = [{
   title: "Secrets of Feijoada",
   description: "Learn how to make authentic Brazilian feijoada with all the traditional accompaniments."
@@ -211,7 +204,6 @@ const learningPoints = [{
   title: "Brazilian Stews",
   description: "Essential techniques for preparing moquecas and traditional Brazilian stews."
 }];
-
 const testimonials = [{
   name: "Sarah Thompson",
   location: "London, UK",
@@ -228,7 +220,6 @@ const testimonials = [{
   text: "Beautiful photos, clear instructions, and authentic flavors. This eBook exceeded my expectations!",
   avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=64&h=64&fit=crop&crop=faces"
 }];
-
 const faqs = [{
   question: "Is this book digital or physical?",
   answer: "This is a digital eBook (PDF format) that you can read on any device - your computer, tablet, or smartphone."
@@ -242,5 +233,4 @@ const faqs = [{
   question: "How many recipes are included?",
   answer: "The eBook contains 30 traditional Brazilian recipes, including main dishes, sides, desserts, and drinks."
 }];
-
 export default Index;
