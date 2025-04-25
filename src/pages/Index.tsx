@@ -3,10 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { Star, Check, Users } from "lucide-react";
-
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
-
   return <div className="min-h-screen bg-gradient-to-b from-[#FFF5E6] to-[#FFE0B2] text-[#333]">
       {/* Hero Section */}
       <div className="relative overflow-hidden py-20">
@@ -19,7 +17,7 @@ const Index = () => {
                   Flavors of Brazil
                 </span>
               </h1>
-              <p className="text-lg text-[#444] max-w-xl">Transform your kitchen into a little piece of Brazil with the most traditional Brazilian cuisine recipes with our exclusive eBook. From feijoada to brigadeiros, embark now on a journey of unforgettable flavors!</p>
+              <p className="text-lg text-[#444] max-w-xl">Transform Your Kitchen into a Sanctuary of Flavour: Discover the Most Authentic Brazilian Recipes and Instantly Impress Family and Friends! From rich feijoada to irresistible brigadeiros, our exclusive eBook gives you everything you need to cook, savour, and fall in love with Brazilian cuisine – no experience required. Start your delicious journey today!</p>
               <Button onClick={() => window.open('https://pay.kiwify.com/CTYr2lR', '_blank')} className="text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl bg-green-600 hover:bg-green-500">
                 Get your eBook now!
               </Button>
@@ -68,8 +66,7 @@ const Index = () => {
             O que você vai aprender
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {learningPoints.map((point, index) => (
-              <div key={index} className="flex items-start space-x-4">
+            {learningPoints.map((point, index) => <div key={index} className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <Check className="w-6 h-6 text-green-600" />
                 </div>
@@ -77,8 +74,7 @@ const Index = () => {
                   <h3 className="font-bold text-lg mb-2 text-[#FF6B35]">{point.title}</h3>
                   <p className="text-[#444]">{point.description}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
@@ -200,26 +196,19 @@ const Index = () => {
       </footer>
     </div>;
 };
-
-const learningPoints = [
-  {
-    title: "Segredos da Feijoada",
-    description: "Aprenda a fazer a autêntica feijoada brasileira, com todos os acompanhamentos tradicionais."
-  },
-  {
-    title: "Brigadeiros Gourmet",
-    description: "Descubra variações deliciosas do brigadeiro tradicional que impressionarão seus convidados."
-  },
-  {
-    title: "Pão de Queijo Perfeito",
-    description: "O segredo do pão de queijo mineiro, crocante por fora e macio por dentro."
-  },
-  {
-    title: "Moquecas e Ensopados",
-    description: "As técnicas essenciais para preparar moquecas e ensopados com sabor brasileiro."
-  }
-];
-
+const learningPoints = [{
+  title: "Segredos da Feijoada",
+  description: "Aprenda a fazer a autêntica feijoada brasileira, com todos os acompanhamentos tradicionais."
+}, {
+  title: "Brigadeiros Gourmet",
+  description: "Descubra variações deliciosas do brigadeiro tradicional que impressionarão seus convidados."
+}, {
+  title: "Pão de Queijo Perfeito",
+  description: "O segredo do pão de queijo mineiro, crocante por fora e macio por dentro."
+}, {
+  title: "Moquecas e Ensopados",
+  description: "As técnicas essenciais para preparar moquecas e ensopados com sabor brasileiro."
+}];
 const testimonials = [{
   name: "Sarah Thompson",
   location: "London, UK",
@@ -236,7 +225,6 @@ const testimonials = [{
   text: "Beautiful photos, clear instructions, and authentic flavors. This eBook exceeded my expectations!",
   avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=64&h=64&fit=crop&crop=faces"
 }];
-
 const faqs = [{
   question: "Is this book digital or physical?",
   answer: "This is a digital eBook (PDF format) that you can read on any device - your computer, tablet, or smartphone."
@@ -250,5 +238,4 @@ const faqs = [{
   question: "How many recipes are included?",
   answer: "The eBook contains 30 traditional Brazilian recipes, including main dishes, sides, desserts, and drinks."
 }];
-
 export default Index;
