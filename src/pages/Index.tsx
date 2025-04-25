@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card } from "@/components/ui/card";
+import { Star, Check, Users } from "lucide-react";
+
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
+
   return <div className="min-h-screen bg-gradient-to-b from-[#FFF5E6] to-[#FFE0B2] text-[#333]">
       {/* Hero Section */}
       <div className="relative overflow-hidden py-20">
@@ -31,6 +35,54 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Benefits Section */}
+      <div className="py-16 bg-white/50">
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
+            Por que escolher nosso eBook?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <Star className="w-12 h-12 text-[#FFD700] mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Receitas Autênticas</h3>
+              <p className="text-[#444]">Aprenda receitas genuínas transmitidas por gerações de cozinheiros brasileiros.</p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <Users className="w-12 h-12 text-[#FF6B35] mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Para Toda a Família</h3>
+              <p className="text-[#444]">Receitas que agradam a todos, desde pratos principais até sobremesas deliciosas.</p>
+            </Card>
+            <Card className="p-6 hover:shadow-xl transition-shadow">
+              <Check className="w-12 h-12 text-green-600 mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Fácil de Seguir</h3>
+              <p className="text-[#444]">Instruções passo a passo detalhadas e lista de ingredientes facilmente encontráveis.</p>
+            </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* What You'll Learn Section */}
+      <div className="py-16 bg-gradient-to-r from-[#FFA07A]/20 to-[#FF6347]/20">
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
+            O que você vai aprender
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {learningPoints.map((point, index) => (
+              <div key={index} className="flex items-start space-x-4">
+                <div className="flex-shrink-0">
+                  <Check className="w-6 h-6 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-2 text-[#FF6B35]">{point.title}</h3>
+                  <p className="text-[#444]">{point.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* Pricing Section */}
       <div className="py-16 relative overflow-hidden bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">
         <div className="container mx-auto px-4">
@@ -48,9 +100,6 @@ const Index = () => {
           </div>
         </div>
       </div>
-
-      {/* Final CTA */}
-      
 
       {/* Stats Section */}
       <div className="bg-gradient-to-r from-[#FFA07A] to-[#FF6347] py-16">
@@ -70,6 +119,25 @@ const Index = () => {
               <h3 className="text-2xl font-bold text-[#FFD700]">4.9/5</h3>
               <p className="text-gray-300">Customer Rating</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Guarantee Section */}
+      <div className="py-16 bg-white/50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-playfair text-3xl mb-6 text-[#FF6B35]">
+            Nossa Garantia
+          </h2>
+          <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <Star className="w-16 h-16 text-[#FFD700] mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-4 text-[#FF6B35]">
+              7 Dias de Garantia Incondicional
+            </h3>
+            <p className="text-[#444] mb-6">
+              Se você não ficar completamente satisfeito com o eBook nos primeiros 7 dias, 
+              devolvemos seu dinheiro integralmente. Sem perguntas!
+            </p>
           </div>
         </div>
       </div>
@@ -132,6 +200,26 @@ const Index = () => {
       </footer>
     </div>;
 };
+
+const learningPoints = [
+  {
+    title: "Segredos da Feijoada",
+    description: "Aprenda a fazer a autêntica feijoada brasileira, com todos os acompanhamentos tradicionais."
+  },
+  {
+    title: "Brigadeiros Gourmet",
+    description: "Descubra variações deliciosas do brigadeiro tradicional que impressionarão seus convidados."
+  },
+  {
+    title: "Pão de Queijo Perfeito",
+    description: "O segredo do pão de queijo mineiro, crocante por fora e macio por dentro."
+  },
+  {
+    title: "Moquecas e Ensopados",
+    description: "As técnicas essenciais para preparar moquecas e ensopados com sabor brasileiro."
+  }
+];
+
 const testimonials = [{
   name: "Sarah Thompson",
   location: "London, UK",
@@ -148,6 +236,7 @@ const testimonials = [{
   text: "Beautiful photos, clear instructions, and authentic flavors. This eBook exceeded my expectations!",
   avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=64&h=64&fit=crop&crop=faces"
 }];
+
 const faqs = [{
   question: "Is this book digital or physical?",
   answer: "This is a digital eBook (PDF format) that you can read on any device - your computer, tablet, or smartphone."
@@ -161,4 +250,5 @@ const faqs = [{
   question: "How many recipes are included?",
   answer: "The eBook contains 30 traditional Brazilian recipes, including main dishes, sides, desserts, and drinks."
 }];
+
 export default Index;
