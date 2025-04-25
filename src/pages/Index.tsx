@@ -13,7 +13,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left space-y-6">
               <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#FF6B35]">
-                Learn to Cook Authentic 
+                Learn to Cook Authentic
                 <span className="text-[#FF9F1C] block mt-2">
                   Brazilian Dishes
                 </span>
@@ -38,23 +38,23 @@ const Index = () => {
       <div className="py-16 bg-white/50">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
-            Por que escolher nosso eBook?
+            Why Choose Our eBook?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 hover:shadow-xl transition-shadow">
               <Star className="w-12 h-12 text-[#FFD700] mb-4" />
-              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Receitas Autênticas</h3>
-              <p className="text-[#444]">Aprenda receitas genuínas transmitidas por gerações de cozinheiros brasileiros.</p>
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Authentic Recipes</h3>
+              <p className="text-[#444]">Learn genuine recipes passed down through generations of Brazilian cooks.</p>
             </Card>
             <Card className="p-6 hover:shadow-xl transition-shadow">
               <Users className="w-12 h-12 text-[#FF6B35] mb-4" />
-              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Para Toda a Família</h3>
-              <p className="text-[#444]">Receitas que agradam a todos, desde pratos principais até sobremesas deliciosas.</p>
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">For the Whole Family</h3>
+              <p className="text-[#444]">Recipes that everyone will love, from main courses to delightful desserts.</p>
             </Card>
             <Card className="p-6 hover:shadow-xl transition-shadow">
               <Check className="w-12 h-12 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Fácil de Seguir</h3>
-              <p className="text-[#444]">Instruções passo a passo detalhadas e lista de ingredientes facilmente encontráveis.</p>
+              <h3 className="text-xl font-bold mb-2 text-[#FF6B35]">Easy to Follow</h3>
+              <p className="text-[#444]">Detailed step-by-step instructions and readily available ingredients list.</p>
             </Card>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Index = () => {
       <div className="py-16 bg-gradient-to-r from-[#FFA07A]/20 to-[#FF6347]/20">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-3xl text-center mb-12 text-[#FF6B35]">
-            O que você vai aprender
+            What you'll learn
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {learningPoints.map((point, index) => <div key={index} className="flex items-start space-x-4">
@@ -199,17 +199,17 @@ const Index = () => {
 };
 
 const learningPoints = [{
-  title: "Segredos da Feijoada",
-  description: "Aprenda a fazer a autêntica feijoada brasileira, com todos os acompanhamentos tradicionais."
+  title: "Secrets of Feijoada",
+  description: "Learn how to make authentic Brazilian feijoada with all the traditional accompaniments."
 }, {
-  title: "Brigadeiros Gourmet",
-  description: "Descubra variações deliciosas do brigadeiro tradicional que impressionarão seus convidados."
+  title: "Gourmet Brigadeiros",
+  description: "Discover delicious variations of traditional brigadeiros that will impress your guests."
 }, {
-  title: "Pão de Queijo Perfeito",
-  description: "O segredo do pão de queijo mineiro, crocante por fora e macio por dentro."
+  title: "Perfect Cheese Bread",
+  description: "The secret to Minas-style cheese bread, crispy on the outside and soft on the inside."
 }, {
-  title: "Moquecas e Ensopados",
-  description: "As técnicas essenciais para preparar moquecas e ensopados com sabor brasileiro."
+  title: "Brazilian Stews",
+  description: "Essential techniques for preparing moquecas and traditional Brazilian stews."
 }];
 
 const testimonials = [{
@@ -237,7 +237,7 @@ const faqs = [{
   answer: "Yes! All recipes come with clear, step-by-step instructions and helpful tips for cooks of all skill levels."
 }, {
   question: "Do I need special ingredients?",
-  answer: "We've carefully adapted the recipes to use ingredients commonly available in UK supermarkets while maintaining authentic flavors."
+  answer: "We've carefully adapted the recipes to use ingredients commonly available in UK supermarkets whilst maintaining authentic flavours."
 }, {
   question: "How many recipes are included?",
   answer: "The eBook contains 30 traditional Brazilian recipes, including main dishes, sides, desserts, and drinks."
